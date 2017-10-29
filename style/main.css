@@ -34,4 +34,31 @@
         width:100%
       }
 
+
+      .typingE{
+        white-space: nowrap;
+        overflow: hidden;
+        width: 30em;
+        animation: type 10s steps(60, end);
+      }
+
+
+      @keyframes type{
+        from { width: 0; }
+      }
+
+      @keyframes type2{
+        0%{width: 0;}
+        50%{width: 0;}
+        100%{ width: 100; }
+      }
+
+      @keyframes blink{
+        to{opacity: .0;}
+      }
+
+      ::selection{
+        background: black;
+      }
+
   }

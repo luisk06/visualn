@@ -109,7 +109,7 @@ var script = {
 			}
 		},*/
 		"",
-		"h Hi lui Welcome to DisappointmentLand!",
+		"h <p class='typingE'>Hi lui Welcome to DisappointmentLand!</p>",
 		"sdfre",
 		"222",
 		"scene c1 with fadeInLeft",
