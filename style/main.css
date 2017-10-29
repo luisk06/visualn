@@ -1,0 +1,37 @@
+/**
+ * ===========================
+ * Your Style Goes Here
+ * ===========================
+**/
+#warning-message { display: none; }
+  @media only screen and (orientation:portrait){
+      #wrapper { display:none; }
+      #warning-message { display:block; }
+  }
+  @media only screen and (orientation:landscape){
+      #warning-message { display:none; }
+      #wrapper{
+        background-image: url("../img/scenes/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
+      .button-style-color{
+        background: rgba(255,0,0,0.8)
+      }
+      .button-style-image{
+        background: url("../img/ui/background-button.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%
+      }
+
+      .section-style{
+        background: url("../img/scenes/cartman-background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%
+      }
+      .doms{
+        width:100%
+      }
+
+  }
