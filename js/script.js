@@ -60,7 +60,7 @@ var scenes = {
 // Define the Characters
 var characters = {
 	"h": {
-		"Name": "Shitty Hero",
+		"Name": "The scripter",
 		"Color": "#5bcaff",
 		"Images":{ // Images Identifier for the "Show" statement.
             "Normal": "werewolf.png"
@@ -80,7 +80,36 @@ var characters = {
 		"Images":{ // Images Identifier for the "Show" statement.
             "Normal": "dragon.jpg"
         }
+	},
+	"t1":{
+		"Name": "t1",
+		"Color":"#a100ad",
+		"Images":{ // Images Identifier for the "Show" statement.
+            "Normal": "panel1.png"
+        }
+	},
+	"t2":{
+		"Name": "t2",
+		"Color":"#a100ad",
+		"Images":{ // Images Identifier for the "Show" statement.
+						"Normal": "panel2.png"
+				}
+	},
+	"t3":{
+		"Name": "t3",
+		"Color":"#a100ad",
+		"Images":{ // Images Identifier for the "Show" statement.
+						"Normal": "panel1/panel1.png"
+				}
+	},
+	"t4":{
+		"Name": "t4",
+		"Color":"#a100ad",
+		"Images":{ // Images Identifier for the "Show" statement.
+						"Normal": "panel1/panel2.png"
+				}
 	}
+
 }
 
 var script = {
@@ -90,11 +119,11 @@ var script = {
 		"notify Welcome 500",
 		"scene a1 with slideInUp",
 		"",
-		"show b Normal left doms with slideInUp",
+	 "show t1 Normal center doms with fadeIn",
 		"",
-		"show h Normal center with slideInUp",
+		"show t2 Normal center doms with slideInRight",
 		"",
-		"show j Normal center doms with slideInUp",
+		"show t3 Normal center doms with fadeIn",
 		//"show b Normal right with fadeIn",
 		/*{"Input": {
 				"Text": "What is your name?",
@@ -109,7 +138,9 @@ var script = {
 			}
 		},*/
 		"",
-		"h <p class='typingE'>Hi lui Welcome to DisappointmentLand!</p>",
+		"At last!... The new iCrap will be mine ... Can't wait to show my precious acquisition to people whose opinion don't really matters but help improving  my self-esteem",
+		"",
+		"show t4 Normal center doms with fadeIn",
 		"sdfre",
 		"222",
 		"scene c1 with fadeInLeft",
