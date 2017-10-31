@@ -42,6 +42,25 @@
         animation: type 10s steps(60, end);
       }
 
+      .puzzle_class{
+          z-index: 20;
+          position: absolute;
+          color: aliceblue;
+          height: 50%;
+        }
+
+        .draggable {
+          width: 140px;
+          height: 140px;
+          background: #F90;
+          border-radius: 10px;
+        }
+        .draggable.is-pointer-down {
+          background: #09F;
+        }
+        .draggable.is-dragging { opacity: 0.7; }
+
+
 
       @keyframes type{
         from { width: 0; }

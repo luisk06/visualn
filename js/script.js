@@ -4,7 +4,12 @@ var messages = {
 		"Title": "Help",
 		"Subtitle": "Some useful Links",
 		"Message": "<p><a href='http://monogatari.hyuchia.com/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='http://monogatari.hyuchia.com/demo/'>Demo</a> - A simple Demo.</p>"
-	}
+	},
+	"SampleWriting":{
+			 "Title": "Some sample writing",
+			 "Subtitle": "From Evelyn",
+			 "Message":"Just look how easy it is!&lt;br&gt;&lt;img src='img/sample.png'&gt;"
+	 }
 }
 
 // Define the notifications used in the game
@@ -123,16 +128,29 @@ var script = {
 	// The game starts here.
 
 	"Start": [
-		"notify Welcome 500",
+		/*"notify Welcome 500",*/
 		"scene a1 with slideInUp",
 		"",
+
 	 "show t1 Normal center doms with fadeIn",
 		"",
 		"show t2 Normal center doms with slideInRight",
 		"",
+		function(){
+			alert("is this useful for you?")
+		},
 		"show t3 Normal center doms with fadeIn",
+		
+		function(){
+
+			var draggable_div = document.createElement("DIV");
+			var drag_slot = document.getElementsByClassName("puzzle_class");
+			draggable_div.className = "draggable";
+			drag_slot[0].appendChild(draggable_div);
+
+		},
 		//"show b Normal right with fadeIn",
-		/*{"Input": {
+		{"Input": {
 				"Text": "What is your name?",
 				"Validation": function(input) {
 					return input.trim().length > 0;
@@ -143,7 +161,7 @@ var script = {
 				},
 				"Warning": "You must enter a name!"
 			}
-		},*/
+		},
 		"",
 		"At last!... The new iCrap will be mine ... Can't wait to show my precious acquisition to people whose opinion don't really matters but help improving  my self-esteem",
 		"",
