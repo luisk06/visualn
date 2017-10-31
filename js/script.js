@@ -108,6 +108,13 @@ var characters = {
 		"Images":{ // Images Identifier for the "Show" statement.
 						"Normal": "panel1/panel2.png"
 				}
+	},
+	"t5":{
+		"Name": "t5",
+		"Color":"#a100ad",
+		"Images":{ // Images Identifier for the "Show" statement.
+						"Normal": "panel1/panel3.png"
+				}
 	}
 
 }
@@ -141,6 +148,8 @@ var script = {
 		"At last!... The new iCrap will be mine ... Can't wait to show my precious acquisition to people whose opinion don't really matters but help improving  my self-esteem",
 		"",
 		"show t4 Normal center doms with fadeIn",
+		"",
+		"show t5 Normal center doms with slideInRight",
 		"sdfre",
 		"222",
 		"scene c1 with fadeInLeft",
