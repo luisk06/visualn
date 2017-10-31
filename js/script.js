@@ -136,30 +136,40 @@ var script = {
 		"",
 		"show t2 Normal center doms with slideInRight",
 		"",
-		function(){
-			alert("is this useful for you?")
-		},
+		// function(){
+		// 	alert("is this useful for you?")
+		// },
 		"show t3 Normal center doms with fadeIn",
-		
+
 		function(){
 
-			var draggable_div = document.createElement("DIV");
+			var draggable_div1 = document.createElement("DIV");
+			var draggable_div2 = document.createElement("DIV");
+			var draggable_div3 = document.createElement("DIV");
 			var drag_slot = document.getElementsByClassName("puzzle_class");
-			draggable_div.className = "draggable";
-			drag_slot[0].appendChild(draggable_div);
+			draggable_div1.className = "draggable";
+			draggable_div1.innerHTML = "<div class='riddle_block'><img src='./img/riddles/1/1.png'></div>";
+			draggable_div2.className = "draggable";
+			draggable_div2.innerHTML = "<div class='riddle_block'><img src='./img/riddles/1/2.png'></div>";
+			draggable_div3.className = "draggable";
+			draggable_div3.innerHTML = "<div class='riddle_block'><img src='./img/riddles/1/3.png'></div>";
+			drag_slot[0].appendChild(draggable_div1);
+			drag_slot[0].appendChild(draggable_div2);
+			drag_slot[0].appendChild(draggable_div3);
 
 		},
 		//"show b Normal right with fadeIn",
 		{"Input": {
-				"Text": "What is your name?",
+				"Text": "Is that true?",
 				"Validation": function(input) {
-					return input.trim().length > 0;
-					alert("hello")
+					//return input.trim().length > 0;
+					return input == "absolutely";
+					//alert("hello")
 				},
 				"Save": function(input) {
 					storage.player.Name = input;
 				},
-				"Warning": "You must enter a name!"
+				"Warning": "That's not the answer!"
 			}
 		},
 		"",

@@ -31,7 +31,8 @@
         background-size: 100% 100%
       }
       .doms{
-        width:100%
+        width:100%;
+        top:0;
       }
 
 
@@ -46,13 +47,17 @@
           z-index: 20;
           position: absolute;
           color: aliceblue;
-          height: 50%;
+          height: 10vw;
+        }
+
+        .riddle_block{
+          width:0;
         }
 
         .draggable {
           width: 140px;
           height: 140px;
-          background: #F90;
+          /*background: #F90;*/
           border-radius: 10px;
         }
         .draggable.is-pointer-down {
