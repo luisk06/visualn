@@ -168,6 +168,12 @@ var script = {
 				},
 				"Save": function(input) {
 					storage.player.Name = input;
+					console.log("h3llo");
+					var puzzle = document.getElementsByClassName("puzzle_class");
+					console.log(puzzle);
+					console.log(puzzle[0]);
+					puzzle[0].remove();
+					console.log("hello3");
 				},
 				"Warning": "That's not the answer!"
 			}
